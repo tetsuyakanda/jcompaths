@@ -1,0 +1,48 @@
+{
+  "name": "viewer",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Kanda, Tetsuya <kanda@m.ndsu.ac.jp>", 
+  "contributors": ["Yuki Hashimoto"],
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@fontsource/dejavu-mono": "^5.0.11",
+    "@mui/lab": "5.0.0-alpha.150",
+    "@mui/material": "^5.15.20",
+    "merger": "file:../merger",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-promise-suspense": "^0.3.4",
+    "react-scripts": "5.0.1",
+    "react-use": "^17.5.0",
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.4",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.2"
+  },
+  "scripts": {
+    "load": "merger ./public/assets/proj1/fileinfo.json ./public/assets/proj2/fileinfo.json ./public/assets/proj1/varinfo.json ./public/assets/proj2/varinfo.json ./public/assets/proj1/methodinfo.json ./public/assets/proj2/methodinfo.json ./public/assets/target.json",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
